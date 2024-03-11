@@ -1,0 +1,172 @@
+
+//Valid Palindrome
+
+import java.text.Format;
+
+public class ValidPalindrome {
+
+    public static void main(String[] args) {
+
+
+        String validName1 = "racecar";
+        String checkName1 = "racecar";
+
+        Boolean check1 = true;
+        Boolean check2 = false;
+
+
+        System.out.println("\n");
+
+
+        if (validName1.equals(checkName1)) {
+
+            for (Integer i = 8; i > checkName1.length(); i--) {
+
+                System.out.println("\"racecar\" reads the same backward and forward." + " Is: " + check1);
+
+            }
+        } else if (validName1 != checkName1) {
+
+            System.out.println(validName1 + " doesn't reads the same backward and forward." + " Is: " + check2);
+        } else {
+
+            System.out.println("There is no statement. ");
+        }
+
+
+        System.out.println("==================================================================================" + "\n");
+
+
+        String validName2 = "Madam, I'm Adam";
+        String cleanName2 = validName2.replace("[^a-zA-Z0-9-'-,]", "").toLowerCase();
+
+
+        String checkName2 = "madamimadam";
+
+
+        if(cleanName2.equals(checkName2)) {
+
+            for (Integer j = 16; j > checkName2.length(); j--) {
+
+
+                System.out.println(validName2 + " Reads the same backward and forward." + " Is: " + check1);
+            }
+        } else if (validName2 != checkName2) {
+
+            System.out.println(validName2 + "Doesn't reads the same backward and forward. " + " Is: " + check2);
+
+        } else {
+
+            System.out.println("There is no statement. ");
+        }
+
+        System.out.println("===================================================================="+"\n");
+
+        String validName3 = "OpenAI";
+        String checkName3 = "ainepo";
+
+        if(validName3.equals(checkName3)) {
+
+            for (Integer l = 0; l < checkName3.length(); l++) {
+
+                System.out.println(validName3 + " Reads the same backward and forward." + " Is: " + check1);
+            }
+        }
+
+            else if(validName3 != checkName3){
+
+                System.out.println(validName3+ "Doesn't reads the same backward and forward. " + " Is: "+check2);
+            }
+
+            else {
+
+                System.out.println("There is no statement. ");
+
+        }
+
+        System.out.println("====================================================================="+"\n");
+
+
+        String validName4 = "A man, a plan, a canal: Panama";
+        String cleanName4 = validName4.replace("[^a-zA-Z0-9-'-,]", "").toLowerCase();
+        String checkName4 = "amanaplanacanalpanama";
+
+        if(cleanName4.equals(checkName4)) {
+
+            for (Integer l = 0; l < checkName4.length(); l++) {
+
+                System.out.println(validName3 + " Reads the same backward and forward." + " Is: " + check1);
+            }
+        }
+
+        else if(cleanName4 != checkName4){
+
+            System.out.println(validName4+ "Doesn't reads the same backward and forward. " + " Is: "+check2);
+        }
+
+        else {
+
+            System.out.println("There is no statement. ");
+
+        }
+
+        System.out.println("========================================================================="+"\n");
+
+
+
+
+        String validName5 = "No lemon, no melon";
+        String cleanName5 = validName5.replace("[^a-zA-Z0-9-'-,]", "").toLowerCase();
+        String checkName5 = "nolemonnomelon";
+
+        if(cleanName5.equals(checkName5)) {
+
+            for (Integer l = 0; l < checkName5.length(); l++) {
+
+                System.out.println(validName5 + " Reads the same backward and forward." + " Is: " + check1);
+            }
+        }
+
+        else if(cleanName5 != checkName5){
+
+            System.out.println(validName5+ "Doesn't reads the same backward and forward. " + " Is: "+check2);
+        }
+
+        else {
+
+            System.out.println("There is no statement. ");
+
+        }
+
+        System.out.println("======================================================================="+"\n");
+
+
+
+        String validName6 = "Hello, world!";
+        String cleanName6 = validName6.replace("[^a-zA-Z0-9-'-,]", "").toLowerCase();
+        String checkName6 = "dlrowolleh";
+
+        if(cleanName6.equals(checkName6)) {
+
+            for (Integer l = 0; l < checkName6.length(); l++) {
+
+                System.out.println(validName6 + " Reads the same backward and forward." + " Is: " + check1);
+            }
+        }
+
+        else if(cleanName6 != checkName6){
+
+            System.out.println(validName6+ "Doesn't reads the same backward and forward. " + " Is: "+check2);
+        }
+
+        else {
+
+            System.out.println("There is no statement. ");
+
+        }
+
+
+
+    }
+    }
+
